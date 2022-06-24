@@ -2,19 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="index.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<style>
-html *
-{
-    font-family: Helvetica !important;
-
-}
-</style>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    html *
+    {
+        font-family: Helvetica !important;
+    }
+    </style>
 
 </head>
 
@@ -31,13 +30,14 @@ html *
     </div>
 </div>
 
+
 <body class="colorChangeBackground">
     <!-- header -->
-    <div style = "margin-top: 20px;" class= "header" >
-        <img style="width: 200px;padding-right: 20px;padding-top: 20px" align = "left"; src="https://via.placeholder.com/60x60">
-        <h1 style="text-align: left;">Hey I'm <span style="background-color: lemonchiffon; color: black;">Jayu</span>!</h1>
-        <p style="text-align: left;">I am <u> sophmore at UC Berkeley</u> interested in the intersection between <span style="background-color: lemonchiffon; color: black; padding: 1px;">computer science + entrepuneurship</span> and it's overall impact on innovation! Here are somethings I am working on right now: </p>
-        <ul style="text-align: left;">
+    <div style = "margin-top: 20px;" class= "header">
+        <img style="width: 200px;padding-right: 20px;padding-top: 20px" align = "left"; src="https://via.placeholder.com/60x60"  data-aos="zoom-in">
+        <h1 style="text-align: left;"  data-aos="zoom-in" >Hey I'm <span data-aos="fade-right" style="background-color: lemonchiffon; color: black;">Jayu</span>!</h1>
+        <p style="text-align: left;overflow:auto"  data-aos="zoom-in">I am <u> sophmore at UC Berkeley</u> interested in the intersection between <span style="background-color: lemonchiffon; color: black; padding: 1px;">computer science + entrepuneurship</span> and it's overall impact on innovation! Here are somethings I am working on right now: </p>
+        <ul style="text-align: left;"  data-aos="zoom-in"> 
             <li>Consulting for new companies in the <span style="background-color: lemonchiffon; color: black; padding: 1px;">Web3</span> industry next semester through Entrepreneurs@Berkeley!</li>
             <li>Recenetly finished a <span style="background-color: lemonchiffon; color: black;padding: 1px;">prototype</span> for the start-up <span style="background-color: lemonchiffon; color: black;padding: 1px;">JourneyKeeper</span>!</li>
             <li>Built a keypad for my college dorm room that went viral on <a href="https://vm.tiktok.com/TTPdkBdBUM/" style="background-color:lightblue; color: black; padding: 1px;">Tiktok</a>!</li>
@@ -45,13 +45,13 @@ html *
 
     </div>
     <!-- main content -->
-    <div style="background-color: black;">
+    <div style="background-color: black; height: relative">
         <h1 style="color: white; padding: 20px; background: black; ">Work Experiences and Personal Projects</h1>
-        <div style = "background-color: transparent;"class="main grid-container">
+        <div style = "background-color: transparent;"class="main grid-container" data-aos="fade-in">
             <!-- work experience 1 -->
-            <div class = "divBackground one" data-aos="fade-down">
+            <div class = "divBackground one" data-aos="fade-right">
                 <h2 style = "padding-left: 20px;">Cofounder/Chief Technology Officer - Hideouts</h2>
-                <h5 style = "padding-left: 20px;">May 2020 - March 2021</h5>
+                <h5 style = "padding-left: 20px;">Skills: SwiftUI, Firebase, Node.js, App Store Delivery Process, Beta Testing, Leadership</h5>
                 <iframe width="200" height="200" style = "padding-right: 20px; padding-left: 20px" align = "left"; src="https://www.youtube.com/embed/Z21v-TZc6sA" allow="allowfullscreen; encrypted-media;", frameborder= "0"></iframe>
                 <!-- <img style="width: 200px;padding-right: 20px;" align = "left"; src="https://via.placeholder.com/60x60"> -->
                 <p style = "padding: 5px;"> I worked to developed an MVP in only 9 weeks and helped earn Seed Funding (100k for 10% equity). In addition, I spearheaded a team of 6 IOS developers inorder to work towards a final product. Some of the tools I worked with includes Swift's Core Data, Media Player, as well as Firebase to create an Auth system, message sending (image, audio, and video sending) using Firebase, and various features more unique to the app.
@@ -64,10 +64,10 @@ html *
                 <br>
             </div>
             <!-- work experience 2 -->
-            <div class="divBackground two">
+            <div class="divBackground two" data-aos="fade-left">
                 <h2 style = "padding-left: 20px; padding-right: 5px" >Information Technology Administrative Assistant - Pacific Wire and Cable</h2>
-                <h5 style = "padding-left: 20px;">June 2017 - February 2021</h5>
-                <img style="width: 200px;padding-right: 20px; padding-left: 20px;" align = "left"; src="https://via.placeholder.com/60x60">
+                <h5 style = "padding-left: 20px;">Skills: WordPress, Python automation, Opperating System Management, Server Maintenance </h5>
+                <img style="width: 200px;padding-right: 20px; padding-left: 20px;" align = "left"; src="Screen Shot 2022-05-25 at 7.20.21 PM.png">
                 <p valign = "top"style = "padding: 5px;"> At Pacific Wire and Cable, I created a server to ensure digital security and increase internet speeds by over 150%. In addition, I worked with organizational softwares to ensure timely delivery of products and utlized Python automation to increase efficiency within the business.</p>
                 <br>
                 <br>
@@ -78,11 +78,84 @@ html *
             </div>
 
             <!-- personal project number 1  -->
+            <div class = "divBackground three" data-aos="fade-right">
+                <h2 style = "padding-left: 20px;">FireNotice - Created a fire notification app using </h2>
+                <h5 style = "padding-left: 20px;">Skills: API, Firebase, Swift, XCode, Swift maps libary</h5>
+                <img style="width: 100px; height: 200px; padding-right: 20px; padding-left: 20px;" align = "left"; src="6.5-inch Screenshot 1.png">
+                <!-- <img style="width: 200px;padding-right: 20px;" align = "left"; src="https://via.placeholder.com/60x60"> -->
+                <p style = "padding: 5px;"> While living in Califronia, I have experience a number of very very close encounters with forest fires, however so has many of my friends and family members. In order to combat this issue, I created an app that would notiify people if they, or their loved ones where in the path of a forest fire. In addition, this app allows users to put in key places (your kid's school, grandparent's houses, etc.) that you want to ensure are safe durring fire seasons. Creating this app exercised my technical skills however it went farther to develop my <u>user-centered mindset/empathy when programming</u>.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
             <!-- personal project number 2  -->
-            <!-- personal project number 3  -->
-    </div>
+            <div class = "divBackground four" data-aos="fade-left">
+                <h2 style = "padding-left: 20px;">Gitlet - Created a terminal version control system</h2>
+                <h5 style = "padding-left: 20px;">Skills: Java</h5>
+                <img style="width: 200px; height: 250px;padding-right: 20px; padding-left: 20px;" align = "left"; src="Screen Shot 2022-05-25 at 7.31.38 PM.png">
+                <!-- <img style="width: 200px;padding-right: 20px;" align = "left"; src="https://via.placeholder.com/60x60"> -->
+                <p style = "padding-left: 5px;padding-right: 5px;padding-top: 5px;">Using Java, I created an version control system simlar to Github called Gitlet. Some of the key features replicating github including:
+                    <ul style="list-style-type: none; text-align: center;" >
+                        <li>add</li>
+                        <li>commit</li>
+                        <li>log</li>
+                        <li>merge</li>
+                        <li>status</li>
+                        <li>branch</li>
+                        <li>checkout (3 different version!)</li>
+                    </ul> 
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
 
+            <!-- personal project number 3  -->
+            <div class = "divBackground five" data-aos="fade-right">
+                <h2 style = "padding-left: 20px;">Created a game of chance</h2>
+                <h5 style = "padding-left: 20px;">Skills: Swift, Firebase, XCode</h5>
+                <img style="width: 100px; height: 200px; padding-right: 20px; padding-left: 20px;" align = "left"; src="Simulator Screen Shot - iPhone 11 - 2022-05-25 at 19.52.27.png">
+                <!-- <img style="width: 200px;padding-right: 20px;" align = "left"; src="https://via.placeholder.com/60x60"> -->
+                <p style = "padding: 5px;">I created a game that would test my ablity to be completely and blindly lucky. I created this game in order to test my ablities using Firebase by creating a leaderboard for all the players who played the game. Users who reached to top 100 player would be prompted to created a 3 letter name for the submition, simlar to an arcade game.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- contact page -->
+            <!-- <div class = "skills">
+                <h1 data-aos="fade-right" style="color: white; padding: 20px; background: black; ">Contact Me Here!</h1>
+                <div class="container">
+                    <form method = "post" action="form.php">
+                  
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your name...">
+                  
+                    <label for="email">Enter your email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email...">
+                  
+                    <label for="message">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Type you message here..." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
+            </div> -->
+        </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
@@ -99,3 +172,15 @@ html *
             • Created a server to ensure digital security and increase internet speeds by over 150%
             • Worked with organizational softwares to ensure timely delivery of products
             • Worked with Python automation to increase efficiency within the business</p> -->
+
+
+
+<!-- Things to do for the website - finish by friday
+ - Skills 
+ - Talk more about personal intrests at the end
+ - add github code-->
+
+ <!-- things i need to do before applying to jobs 
+ - add all code to github - gitlet and chance game
+ - see if I need more coding projects
+ - leet code !!!!!-->
