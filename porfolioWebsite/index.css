@@ -1,0 +1,286 @@
+/* Add a black background color to the top navigation */
+
+  .navbar {
+    background-color:black;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .row {   
+      flex-direction: column;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1000px;
+      grid-auto-rows: 00px;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+      
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1000px;
+      grid-auto-rows: 600px;
+    }
+    .one {
+
+      grid-row: 1;
+    }
+    .two {
+      grid-row: 2;
+    }
+    .three {
+
+      grid-row: 3;
+    }
+    .four {
+
+      grid-row: 4;
+    }
+    .five {
+
+      grid-row: 5;
+    }
+    .six {
+
+      grid-row: 6;
+    }
+    .skills {
+
+      grid-row: 7;
+    }
+  }
+  .header {
+    padding: 200px;
+    text-align: center; 
+    border-style: solid;
+    border: #23a6d5;
+    color: white;
+    background-color: black;
+    
+  }
+  .divBackground:hover{
+    color: black;
+    background-color: white;
+  }
+  
+
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  .colorChangeBackground {
+    height: 2000px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+.divBackground {
+  /* color: black;
+    background-color: white; */
+  color: white;
+  background-color: black;
+  /* background-image: url("https://media.istockphoto.com/vectors/abstract-grey-and-white-tech-geometric-corporate-design-background-vector-id1177980696?k=20&m=1177980696&s=612x612&w=0&h=orXcx7iTYGHsRwSbT8mg-Hes_90nHJ5bwOd_G13YABo="); */
+  width: 100%;
+  height: inherit;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 400px;
+}
+
+.zyenalabs{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.odys{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.amotion{
+  grid-row: 2;
+  grid-column: 1;
+}
+.one {
+  grid-column: 1;
+  grid-row: 3;
+  
+}
+.two {
+  grid-column: 2;
+  grid-row: 3;
+}
+.advantMed {
+  grid-column: 2;
+  grid-row: 2;
+}
+.three {
+  grid-column: 1;
+  grid-row: 4;
+}
+.four {
+  grid-column: 2;
+  grid-row: 4;
+}
+.five {
+  grid-column: 1;
+  grid-row: 5;
+}
+.six {
+  grid-column: 2;
+  grid-row: 5;
+}
+.seven {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.eight{
+  grid-column: 2;
+  grid-row: 6;
+}
+.skills {
+  grid-column: 1;
+  grid-row: 4
+  ;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+mark {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+          animation: 1.5s highlight .5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, lemonchiffon 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
